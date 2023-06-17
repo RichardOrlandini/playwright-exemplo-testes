@@ -1,0 +1,29 @@
+
+LIBS:
+yarn add @faker-js/faker -D  (Dados dinâmicos) {
+    import { faker } from '@faker-js/faker';
+    exemplo de texto para input dinamico: faker.lorem.words()
+}
+
+doteenv {
+    yarn add dotenv -D
+}
+
+
+RECURSOS:
+Remover um recurso via api, podemos criar uma rota /helper/'recurso que nos queremos'. {
+    ex: 
+    Aqui definimos uma fatura e chamamos a rota de delete dessa fatura para zerar o banco com ela
+    assim podemos utilizar essa massa para fazer os testes.
+
+
+    const faturaName = 'fatura@teste-automatio'
+    await request.delete('http://localhost:3333/helper/fatura/' + faturaName)
+}
+
+
+GHERKIN:
+
+CAMPOS required como validar ?  {
+    ex: const validationMessage = await faturaPage.inputFaturaName.evaluate(e => (e as HTMLInputElement).validationMessage)
+}
